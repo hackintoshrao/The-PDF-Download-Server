@@ -1,0 +1,1 @@
+This project is aimed at building a NODE.JS based webServer which can be run to provide PDF download capabilities on the web page . Backbone.js will be the front framework used . 
