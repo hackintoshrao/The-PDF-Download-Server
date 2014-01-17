@@ -53,7 +53,7 @@ window.WineView = Backbone.View.extend({
             success: function (model) {
                 self.render();
                 app.navigate('wines/' + model.id, false);
-                utils.showAlert('Success!', 'Wine saved successfully', 'alert-success');
+                utils.showAlert('Success!', 'Book saved successfully', 'alert-success');
             },
             error: function () {
                 utils.showAlert('Error', 'An error occurred while trying to delete this item', 'alert-error');
@@ -64,7 +64,7 @@ window.WineView = Backbone.View.extend({
     deleteWine: function () {
         this.model.destroy({
             success: function () {
-                alert('Wine deleted successfully');
+                alert('Book deleted successfully');
                 window.history.back();
             }
         });
