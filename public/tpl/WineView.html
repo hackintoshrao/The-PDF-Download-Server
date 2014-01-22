@@ -4,7 +4,7 @@
 
         <fieldset>
 
-            <legend>Wine Details</legend>
+            <legend>Book Details</legend>
             <br/>
 
             <div class="row">
@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label for="grapes" class="control-label">Grapes:</label>
+                        <label for="grapes" class="control-label">Author:</label>
 
                         <div class="controls">
                             <input type="text" id="grapes" name="grapes" value="<%= grapes %>"/>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label for="country" class="control-label">Country:</label>
+                        <label for="country" class="control-label">Branch:</label>
 
                         <div class="controls">
                             <input type="text" id="country" name="country" value="<%= country %>"/>
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label for="region" class="control-label">Region:</label>
+                        <label for="region" class="control-label">Tags:</label>
 
                         <div class="controls">
                             <input type="text" id="region" name="region" value="<%= region %>"/>
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="control-group">
-                        <label for="description" class="control-label">Notes:</label>
+                        <label for="description" class="control-label">Description:</label>
 
                         <div class="controls">
                             <textarea id="description" name="description" style="width: 90%;" rows="6"><%= description
@@ -88,8 +88,8 @@
 
                 <div class="span4">
                     <div class="well" style="width: 180px;text-align: center;width:50%;margin: 0px auto;">
-                        <p><img id="picture" width="180" src="<%= picture === null ? 'pics/generic.jpg' : 'pics/' + picture %>"/></p>
-                        <p style="color:#999;">To change the picture, drag a new picture from your file system onto the box above.</p>
+                        <p><img id="picture" width="180" src="<%= picture === null ? 'pics/generic.jpg.png' : 'pics/' + picture %>"/></p>
+                        <p style="color:#999;"></p> <!C -->
                     </div>
                 </div>
 
