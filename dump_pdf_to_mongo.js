@@ -1,6 +1,6 @@
 var fs = require('fs');
 var MongoClient = require('mongodb').MongoClient;
-MongoClient.connect("mongodb://127.0.0.1:27017/windedb",function(err,db){
+MongoClient.connect("mongodb://127.0.0.1:27017/winedb",function(err,db){
 	fs.readdir('./pdf',function(err,files){
 
 	console.log(files);
@@ -10,12 +10,12 @@ MongoClient.connect("mongodb://127.0.0.1:27017/windedb",function(err,db){
 			if(err){
 				throw err;
 			}
-
+			console.log(JSON.stringify(inserted));	
 		});
 	}
 	
 	});
 
 	
-
+	return db.close();
 });
